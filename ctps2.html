@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>45-Day Study Plan for HTB CPTS Exam</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .anchor-offset {
+        padding-top: 70px; /* Adjust this value based on your navbar height */
+        margin-top: -70px; /* Adjust this value based on your navbar height */
+      }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">HTB CPTS Study Plan</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#week1" id="week1Dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Week 1
+          </a>
+          <div class="dropdown-menu" aria-labelledby="week1Dropdown">
+            <a class="dropdown-item" href="#day1">Day 1</a>
+            <a class="dropdown-item" href="#day2">Day 2</a>
+            <a class="dropdown-item" href="#day3">Day 3</a>
+            <a class="dropdown-item" href="#day4">Day 4</a>
+            <a class="dropdown-item" href="#day5">Day 5</a>
+            <a class="dropdown-item" href="#day6">Day 6</a>
+            <a class="dropdown-item" href="#day7">Day 7</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#week2" id="week2Dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Week 2
+          </a>
+          <div class="dropdown-menu" aria-labelledby="week2Dropdown">
+            <a class="dropdown-item" href="#day8">Day 8</a>
+            <a class="dropdown-item" href="#day9">Day 9</a>
+            <a class="dropdown-item" href="#day10">Day 10</a>
+            <a class="dropdown-item" href="#day11">Day 11</a>
+            <a class="dropdown-item" href="#day12">Day 12</a>
+            <a class="dropdown-item" href="#day13">Day 13</a>
+            <a class="dropdown-item" href="#day14">Day 14</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#week3" id="week3Dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Week 3
+          </a>
+          <div class="dropdown-menu" aria-labelledby="week3Dropdown">
+            <a class="dropdown-item" href="#day15">Day 15</a>
+            <a class="dropdown-item" href="#day16">Day 16</a>
+            <a class="dropdown-item" href="#day17">Day 17</a>
+            <a class="dropdown-item" href="#day18">Day 18</a>
+            <a class="dropdown-item" href="#day19">Day 19</a>
+            <a class="dropdown-item" href="#day20">Day 20</a>
+            <a class="dropdown-item" href="#day21">Day 21</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#week4" id="week4Dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Week 4
+          </a>
+          <div class="dropdown-menu" aria-labelledby="week4Dropdown">
+            <a class="dropdown-item" href="#day22">Day 22</a>
+            <a class="dropdown-item" href="#day23">Day 23</a>
+            <a class="dropdown-item" href="#day24">Day 24</a>
+            <a class="dropdown-item" href="#day25">Day 25</a>
+            <a class="dropdown-item" href="#day26">Day 26</a>
+            <a class="dropdown-item" href="#day27">Day 27</a>
+            <a class="dropdown-item" href="#day28">Day 28</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#week5" id="week5Dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Week 5-6
+          </a>
+          <div class="dropdown-menu" aria-labelledby="week5Dropdown">
+            <a class="dropdown-item" href="#day29">Day 29</a>
+            <a class="dropdown-item" href="#day30">Day 30</a>
+            <a class="dropdown-item" href="#day31">Day 31</a>
+            <a class="dropdown-item" href="#day32">Day 32</a>
+            <a class="dropdown-item" href="#day33">Day 33</a>
+            <a class="dropdown-item" href="#day34">Day 34</a>
+            <a class="dropdown-item" href="#day35">Day 35</a>
+            <a class="dropdown-item" href="#day36">Day 36</a>
+            <a class="dropdown-item" href="#day37">Day 37</a>
+            <a class="dropdown-item" href="#day38">Day 38</a>
+            <a class="dropdown-item" href="#day39">Day 39</a>
+            <a class="dropdown-item" href="#day40">Day 40</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#week7" id="week7Dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Week 7
+          </a>
+          <div class="dropdown-menu" aria-labelledby="week7Dropdown">
+            <a class="dropdown-item" href="#day41">Day 41</a>
+            <a class="dropdown-item" href="#day42">Day 42</a>
+            <a class="dropdown-item" href="#day43">Day 43</a>
+            <a class="dropdown-item" href="#day44">Day 44</a>
+            <a class="dropdown-item" href="#day45">Day 45</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#examplan" id="examDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Exam Plan
+          </a>
+          <div class="dropdown-menu" aria-labelledby="examDropdown">
+            <a class="dropdown-item" href="#examday1">Exam Day 1</a>
+            <a class="dropdown-item" href="#examday2">Exam Day 2</a>
+            <a class="dropdown-item" href="#examday3">Exam Day 3</a>
+            <a class="dropdown-item" href="#examday4">Exam Day 4</a>
+            <a class="dropdown-item" href="#examday5">Exam Day 5</a>
+            <a class="dropdown-item" href="#examday6">Exam Day 6</a>
+            <a class="dropdown-item" href="#examday7">Exam Day 7</a>
+            <a class="dropdown-item" href="#examday8">Exam Day 8</a>
+            <a class="dropdown-item" href="#examday9">Exam Day 9</a>
+            <a class="dropdown-item" href="#examday10">Exam Day 10</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container mt-4">
+    <h2 class="mb-4">Week 1</h2>
+    <section id="day1" class="mb-5 anchor-offset">
+      <h3>Day 1</h3>
+      <p><strong>Module:</strong> 1 - Penetration Testing Process</p>
+      <p><strong>Focus:</strong> Understand the overall process of penetration testing, methodologies, and frameworks.</p>
+      <p><strong>Tools:</strong> N/A</p>
+      <p><strong>Resources:</strong> Course material, "The Pentester BluePrint" by Phillip L. Wylie</p>
+      <p><strong>Study Time:</strong> 2 hours</p>
+      <p><strong>Activities:</strong> Read the module, take notes, and understand the phases of a penetration test.</p>
+    </section>
+
+    <section id="day2" class="mb-5 anchor-offset">
+      <h3>Day 2</h3>
+      <p><strong>Module:</strong> 2 - Getting Started</p>
+      <p><strong>Focus:</strong> Set up your lab environment, understand the tools, and get familiar with basic commands.</p>
+      <p><strong>Tools:</strong> VirtualBox, Kali Linux</p>
+      <p><strong>Resources:</strong> Course material, Kali Linux Documentation</p>
+      <p><strong>Study Time:</strong> 3 hours</p>
+      <p><strong>Activities:</strong> Set up the lab, install necessary tools, practice basic Linux commands.</p>
+    </section>
+
+    <section id="day3" class="mb-5 anchor-offset">
+      <h3>Day 3</h3>
+      <p><strong>Module:</strong> 3 - Network Enumeration with Nmap</p>
+      <p><strong>Focus:</strong> Learn how to use Nmap for network enumeration.</p>
+      <p><strong>Tools:</strong> Nmap</p>
+      <p><strong>Resources:</strong> "Nmap Network Scanning" by Gordon Fyodor Lyon</p>
+      <p><strong>Study Time:</strong> 2 hours</p>
+      <p><strong>Activities:</strong> Read the module, practice Nmap commands on your lab environment.</p>
+    </section>
+
+    <section id="day4" class="mb-5 anchor-offset">
+      <h3>Day 4</h3>
+      <p><strong>Module:</strong> 4 - Footprinting</p>
+      <p><strong>Focus:</strong> Techniques for gathering information about the target.</p>
+      <p><strong>Tools:</strong> Recon-ng, theHarvester</p>
+      <p><strong>Resources:</strong> "The Web Application Hacker's Handbook" by Dafydd Stuttard, Marcus Pinto</p>
+      <p><strong>Study Time:</strong> 2 hours</p>
+      <p><strong>Activities:</strong> Practice footprinting techniques on various websites.</p>
+    </section>
+
+    <section id="day5" class="mb-5 anchor-offset">
+      <h3>Day 5</h3>
+      <p><strong>Module:</strong> 5 - Information Gathering - Web Edition</p>
+      <p><strong>Focus:</strong> Gathering information specifically for web applications.</p>
+      <p><strong>Tools:</strong> Burp Suite, OWASP ZAP</p>
+      <p><strong>Resources:</strong> OWASP Testing Guide</p>
+      <p><strong>Study Time:</strong> 2 hours</p>
+      <p><strong>Activities:</strong> Perform information gathering on sample web applications.</p>
+    </section>
+
+    <section id="day6" class="mb-5 anchor-offset">
+      <h3>Day 6</h3>
+      <p><strong>Module:</strong> 6 - Vulnerability Assessment</p>
+      <p><strong>Focus:</strong> Learn how to assess and identify vulnerabilities.</p>
+      <p><strong>Tools:</strong> Nessus, OpenVAS</p>
+      <p><strong>Resources:</strong> Nessus Documentation, "Mastering Modern Web Penetration Testing" by Prakhar Prasad</p>
+      <p><strong>Study Time:</strong> 2 hours</p>
+      <p><strong>Activities:</strong> Conduct vulnerability assessments on your lab environment.</p>
+    </section>
+
+    <section id="day7" class="mb-5 anchor-offset">
+      <h3>Day 7</h3>
+      <p><strong>Module:</strong> 7 - File Transfers</p>
+      <p><strong>Focus:</strong> Techniques for transferring files during a penetration test.</p>
+      <p><strong>Tools:</strong> Netcat, SCP, FTP</p>
+      <p><strong>Resources:</strong> Course material, Linux man pages</p>
+      <p><strong>Study Time:</strong> 2 hours</p>
+      <p><strong>Activities:</strong> Practice file transfer techniques between systems in your lab.</p>
+    </section>
+
+    <h2 class="mb-4">Week 2</h2>
+    <section id="day8" class="mb-5 anchor-offset">
+      <h3>Day 8</h3>
+      <p><strong>Module:</strong> 8 - Shells & Payloads</p>
+      <p><strong>Focus:</strong> Learn about different types of shells and payloads.</p>
+      <p><strong>Tools:</strong> msfvenom, netcat</p>
+      <p><strong>Resources:</strong> Metasploit Unleashed</p>
+      <p><strong>Study Time:</strong> 2 hours</p>
+      <p><strong>Activities:</strong> Create and execute payloads, practice establishing shells.</p>
+    </section>
+
+    <section id="day9" class="mb-5 anchor-offset">
+      <h3>Day 9</h3>
+      <p><strong>Module:</strong> 9 - Using the Metasploit Framework</p>
+      <p><strong>Focus:</strong> How to use Metasploit for exploitation.</p>
+      <p><strong>Tools:</strong> Metasploit</p>
+      <p><strong>Resources:</strong> "Metasploit: The Penetration Tester's Guide" by David Kennedy</p>
+      <p><strong>Study Time:</strong> 3 hours</p>
+      <p><strong>Activities:</strong> Perform exploitation exercises using Metasploit.</p>
+    </section>
+
+    <section id="day10" class="mb-5 anchor-offset">
+      <h3>Day 10</h3>
+      <p><strong>Module:</strong> 10 - Password Attacks</p>
+      <p><strong>Focus:</strong> Techniques for attacking passwords.</p>
+      <p><strong>Tools:</strong> Hydra, John the Ripper</p>
+      <p><strong>Resources:</strong> "Password Attacks" from HTB Academy</p>
+      <p><strong>Study Time:</strong> 2 hours</p>
+      <p><strong>Activities:</strong> Perform password cracking exercises on different systems.</p>
+    </section>
+
+    <section id="day11" class="mb-5 anchor-offset">
+      <h3>Day 11</h3>
+      <p><strong>Module:</strong> 11 - Attacking Common Services</p>
+      <p><strong>Focus:</strong> Exploiting common network services.</p>
+      <p><strong>Tools:</strong> Nmap, Metasploit</p>
+      <p><strong>Resources:</strong> "Hacking: The Art of Exploitation" by Jon Erickson</p>
+      <p><strong>Study Time:</strong> 2 hours</p>
+      <p><strong>Activities:</strong> Identify and exploit vulnerabilities in common services.</p>
+    </section>
+
+    <section id="day12" class="mb-5 anchor-offset">
+      <h3>Day 12</h3>
+      <p><strong>Module:</strong> 12 - Pivoting, Tunneling, and Port Forwarding</p>
+      <p><strong>Focus:</strong> Advanced techniques for network penetration.</p>
+      <p><strong>Tools:</strong> SSH, netcat, Metasploit</p>
+      <p><strong>Resources:</strong> Offensive Security's "Advanced Penetration Testing"</p>
+      <p><strong>Study Time:</strong> 2 hours</p>
+      <p><strong>Activities:</strong> Practice pivoting and tunneling in your lab environment.</p>
+    </section>
+
+    <section id="day13" class="mb-5 anchor-offset">
+      <h3>Day 13</h3>
+      <p><strong>Module:</strong> 13 - Active Directory Enumeration & Attacks</p>
+      <p><strong>Focus:</strong> Techniques for attacking Active Directory.</p>
+      <p><strong>Tools:</strong> BloodHound, PowerView</p>
+      <p><strong>Resources:</strong> "Attacking Active Directory" by Sean Metcalf</p>
+      <p><strong>Study Time:</strong> 3 hours</p>
+      <p><strong>Activities:</strong> Enumerate and attack an AD environment in your lab.</p>
+    </section>
+
+    <section id="day14" class="mb-5 anchor-offset">
+      <h3>Day 14</h3>
+      <p><strong>Module:</strong> 14 - Using Web Proxies</p>
+      <p><strong>Focus:</strong> Learn how to use web proxies for testing.</p>
+      <p><strong>Tools:</strong> Burp Suite, OWASP ZAP</p>
+      <p><strong>Resources:</strong> OWASP Testing Guide</p>
+      <p><strong>Study Time:</strong> 2 hours</p>
+      <p><strong>Activities:</strong> Set up and use web proxies for interception and modification.</p>
+    </section>
+
+    <h2 class="mb-4">Week 3</h2>
+    <section id="day15" class="mb-5 anchor-offset">
+      <h3>Day 15</h3>
+      <p><strong>Module:</strong> 15 - Attacking Web Applications with Ffuf</p>
+      <p><strong>Focus:</strong> Using Ffuf for web application attacks.</p>
+      <p><strong>Tools:</strong> Ffuf, Burp Suite</p>
+      <p><strong>Resources:</strong> Ffuf GitHub, OWASP Testing Guide</p>
+      <p><strong>Study Time:</strong> 2 hours</p>
+      <p><strong>Activities:</strong> Perform directory brute-forcing and other attacks using Ffuf.</p>
+    </section>
+
+    <section id="day16" class="mb-5 anchor-offset">
+      <h3>Day 16</h3>
+      <p><strong>Module:</strong> 16 - Login Brute Forcing</p>
+      <p><strong>Focus:</strong> Techniques for brute forcing login pages.</p>
+      <p><strong>Tools:</strong> Hydra, Burp Suite</p>
+      <p><strong>Resources:</strong> "The Web Application Hacker's Handbook"</p>
+      <p><strong>Study Time:</strong> 2 hours</p>
+      <p><strong>Activities:</strong> Perform login brute-forcing exercises on various web applications.</p>
+    </section>
+
+    <section id="day17" class="mb-5 anchor-offset">
+      <h3>Day 17</h3>
+      <p><strong>Module:</strong> 17 - SQL Injection Fundamentals</p>
+      <p><strong>Focus:</strong> Basics of SQL injection attacks.</p>
+      <p><strong>Tools:</strong> sqlmap, Burp Suite</p>
+      <p><strong>Resources:</strong> "SQL Injection Attacks and Defense" by Justin Clarke</p>
+      <p><strong>Study Time:</strong> 2 hours</p>
+      <p><strong>Activities:</strong> Identify and exploit SQL injection vulnerabilities.</p>
+    </section>
+
+    <section id="day18" class="mb-5 anchor-offset">
+      <h3>Day 18</h3>
+      <p><strong>Module:</strong> 18 - SQLMap Essentials</p>
+      <p><strong>Focus:</strong> Using SQLMap for automated SQL injection.</p>
+      <p><strong>Tools:</strong> sqlmap</p>
+      <p><strong>Resources:</strong> SQLMap Documentation</p>
+      <p><strong>Study Time:</strong> 2 hours</p>
+      <p><strong>Activities:</strong> Practice using SQLMap on vulnerable web applications.</p>
+    </section>
+
+    <section id="day19" class="mb-5 anchor-offset">
+      <h3>Day 19</h3>
+      <p><strong>Module:</strong> 19 - Cross-Site Scripting (XSS)</p>
+      <p><strong>Focus:</strong> Understanding and exploiting XSS vulnerabilities.</p>
+      <p><strong>Tools:</strong> Burp Suite, XSSer</p>
+      <p><strong>Resources:</strong> "The Web Application Hacker's Handbook"</p>
+      <p><strong>Study Time:</strong> 2 hours</p>
+      <p><strong>Activities:</strong> Identify and exploit XSS vulnerabilities in web applications.</p>
+    </section>
+
+    <section id="day20" class="mb-5 anchor-offset">
+      <h3>Day 20</h3>
+      <p><strong>Module:</strong> 20 - File Inclusion</p>
+      <p><strong>Focus:</strong> Local and remote file inclusion attacks.</p>
+      <p><strong>Tools:</strong> Burp Suite, various web applications</p>
+      <p><strong>Resources:</strong> OWASP Testing Guide</p>
+      <p><strong>Study Time:</strong> 2 hours</p>
+      <p><strong>Activities:</strong> Perform file inclusion attacks on vulnerable web applications.</p>
+    </section>
+
+    <section id="day21" class="mb-5 anchor-offset">
+      <h3>Day 21</h3>
+      <p><strong>Module:</strong> 21 - File Upload Attacks</p>
+      <p><strong>Focus:</strong> Exploiting file upload functionality.</p>
+      <p><strong>Tools:</strong> Burp Suite, Metasploit</p>
+      <p><strong>Resources:</strong> "The Web Application Hacker's Handbook"</p>
+      <p><strong>Study Time:</strong> 2 hours</p>
+      <p><strong>Activities:</strong> Exploit file upload vulnerabilities and execute payloads.</p>
+    </section>
+
+    <h2 class="mb-4">Week 4</h2>
+    <section id="day22" class="mb-5 anchor-offset">
+      <h3>Day 22</h3>
+      <p><strong>Module:</strong> 22 - Command Injections</p>
+      <p><strong>Focus:</strong> Executing commands through vulnerable applications.</p>
+      <p><strong>Tools:</strong> Burp Suite, various web applications</p>
+      <p><strong>Resources:</strong> OWASP Testing Guide</p>
+      <p><strong>Study Time:</strong> 2 hours</p>
+      <p><strong>Activities:</strong> Identify and exploit command injection vulnerabilities.</p>
+    </section>
+
+    <section id="day23" class="mb-5 anchor-offset">
+      <h3>Day 23</h3>
+      <p><strong>Module:</strong> 23 - Web Attacks</p>
+      <p><strong>Focus:</strong> Various web attacks techniques and methodologies.</p>
+      <p><strong>Tools:</strong> Burp Suite, OWASP ZAP</p>
+      <p><strong>Resources:</strong> OWASP Testing Guide</p>
+      <p><strong>Study Time:</strong> 2 hours</p>
+      <p><strong>Activities:</strong> Perform various web attacks on vulnerable web applications.</p>
+    </section>
+
+    <section id="day24" class="mb-5 anchor-offset">
+      <h3>Day 24</h3>
+      <p><strong>Module:</strong> 24 - Attacking Common Applications</p>
+      <p><strong>Focus:</strong> Techniques for attacking commonly used applications.</p>
+      <p><strong>Tools:</strong> Metasploit, various applications</p>
+      <p><strong>Resources:</strong> "Hacking: The Art of Exploitation" by Jon Erickson</p>
+      <p><strong>Study Time:</strong> 2 hours</p>
+      <p><strong>Activities:</strong> Identify and exploit vulnerabilities in common applications.</p>
+    </section>
+
+    <section id="day25" class="mb-5 anchor-offset">
+      <h3>Day 25</h3>
+      <p><strong>Module:</strong> 25 - Linux Privilege Escalation</p>
+      <p><strong>Focus:</strong> Techniques for escalating privileges on Linux systems.</p>
+      <p><strong>Tools:</strong> Linux Exploit Suggester, various scripts</p>
+      <p><strong>Resources:</strong> "Linux Privilege Escalation" by g0tmi1k</p>
+      <p><strong>Study Time:</strong> 3 hours</p>
+      <p><strong>Activities:</strong> Practice privilege escalation techniques on a Linux VM.</p>
+    </section>
+
+    <section id="day26" class="mb-5 anchor-offset">
+      <h3>Day 26</h3>
+      <p><strong>Module:</strong> 26 - Windows Privilege Escalation</p>
+      <p><strong>Focus:</strong> Techniques for escalating privileges on Windows systems.</p>
+      <p><strong>Tools:</strong> Windows Exploit Suggester, various scripts</p>
+      <p><strong>Resources:</strong> "Windows Privilege Escalation" from HackTricks</p>
+      <p><strong>Study Time:</strong> 3 hours</p>
+      <p><strong>Activities:</strong> Practice privilege escalation techniques on a Windows VM.</p>
+    </section>
+
+    <section id="day27" class="mb-5 anchor-offset">
+      <h3>Day 27</h3>
+      <p><strong>Module:</strong> 27 - Documentation & Reporting</p>
+      <p><strong>Focus:</strong> How to document findings and create professional reports.</p>
+      <p><strong>Tools:</strong> CherryTree, KeepNote</p>
+      <p><strong>Resources:</strong> "Writing Penetration Testing Reports" by Steve Anson</p>
+      <p><strong>Study Time:</strong> 2 hours</p>
+      <p><strong>Activities:</strong> Practice documenting your findings from lab exercises.</p>
+    </section>
+
+    <section id="day28" class="mb-5 anchor-offset">
+      <h3>Day 28</h3>
+      <p><strong>Module:</strong> 28 - Review & Recap</p>
+      <p><strong>Focus:</strong> Review all the modules and reinforce the concepts learned.</p>
+      <p><strong>Tools:</strong> N/A</p>
+      <p><strong>Resources:</strong> Review notes, lab exercises, and module summaries</p>
+      <p><strong>Study Time:</strong> 2 hours</p>
+      <p><strong>Activities:</strong> Go through all your notes, review key concepts, and ensure understanding.</p>
+    </section>
+
+    <h2 class="mb-4">Week 5-6: Review and Practical Labs</h2>
+
+<section id="day29" class="mb-5 anchor-offset">
+  <h3>Day 29</h3>
+  <p><strong>Focus:</strong> Review all modules, with an emphasis on weak areas.</p>
+  <p><strong>Tools:</strong> All previously used tools</p>
+  <p><strong>Resources:</strong> Course material, previous notes</p>
+  <p><strong>Study Time:</strong> 3 hours/day</p>
+  <p><strong>Activities:</strong> Revisit challenging modules, perform practical labs, take notes on improvements.</p>
+</section>
+
+<section id="day30" class="mb-5 anchor-offset">
+  <h3>Day 30</h3>
+  <p><strong>Focus:</strong> Review all modules, with an emphasis on weak areas.</p>
+  <p><strong>Tools:</strong> All previously used tools</p>
+  <p><strong>Resources:</strong> Course material, previous notes</p>
+  <p><strong>Study Time:</strong> 3 hours/day</p>
+  <p><strong>Activities:</strong> Revisit challenging modules, perform practical labs, take notes on improvements.</p>
+</section>
+
+<section id="day31" class="mb-5 anchor-offset">
+  <h3>Day 31</h3>
+  <p><strong>Focus:</strong> Review all modules, with an emphasis on weak areas.</p>
+  <p><strong>Tools:</strong> All previously used tools</p>
+  <p><strong>Resources:</strong> Course material, previous notes</p>
+  <p><strong>Study Time:</strong> 3 hours/day</p>
+  <p><strong>Activities:</strong> Revisit challenging modules, perform practical labs, take notes on improvements.</p>
+</section>
+
+<section id="day32" class="mb-5 anchor-offset">
+  <h3>Day 32</h3>
+  <p><strong>Focus:</strong> Review all modules, with an emphasis on weak areas.</p>
+  <p><strong>Tools:</strong> All previously used tools</p>
+  <p><strong>Resources:</strong> Course material, previous notes</p>
+  <p><strong>Study Time:</strong> 3 hours/day</p>
+  <p><strong>Activities:</strong> Revisit challenging modules, perform practical labs, take notes on improvements.</p>
+</section>
+
+<section id="day33" class="mb-5 anchor-offset">
+  <h3>Day 33</h3>
+  <p><strong>Focus:</strong> Review all modules, with an emphasis on weak areas.</p>
+  <p><strong>Tools:</strong> All previously used tools</p>
+  <p><strong>Resources:</strong> Course material, previous notes</p>
+  <p><strong>Study Time:</strong> 3 hours/day</p>
+  <p><strong>Activities:</strong> Revisit challenging modules, perform practical labs, take notes on improvements.</p>
+</section>
+
+<section id="day34" class="mb-5 anchor-offset">
+  <h3>Day 34</h3>
+  <p><strong>Focus:</strong> Review all modules, with an emphasis on weak areas.</p>
+  <p><strong>Tools:</strong> All previously used tools</p>
+  <p><strong>Resources:</strong> Course material, previous notes</p>
+  <p><strong>Study Time:</strong> 3 hours/day</p>
+  <p><strong>Activities:</strong> Revisit challenging modules, perform practical labs, take notes on improvements.</p>
+</section>
+
+<section id="day35" class="mb-5 anchor-offset">
+  <h3>Day 35</h3>
+  <p><strong>Focus:</strong> Review all modules, with an emphasis on weak areas.</p>
+  <p><strong>Tools:</strong> All previously used tools</p>
+  <p><strong>Resources:</strong> Course material, previous notes</p>
+  <p><strong>Study Time:</strong> 3 hours/day</p>
+  <p><strong>Activities:</strong> Revisit challenging modules, perform practical labs, take notes on improvements.</p>
+</section>
+
+<section id="day36" class="mb-5 anchor-offset">
+  <h3>Day 36</h3>
+  <p><strong>Focus:</strong> Practice full penetration testing scenarios.</p>
+  <p><strong>Tools:</strong> All previously used tools</p>
+  <p><strong>Resources:</strong> Practice labs from HTB, TryHackMe</p>
+  <p><strong>Study Time:</strong> 3 hours/day</p>
+  <p><strong>Activities:</strong> Simulate full penetration tests, from information gathering to reporting.</p>
+</section>
+
+<section id="day37" class="mb-5 anchor-offset">
+  <h3>Day 37</h3>
+  <p><strong>Focus:</strong> Practice full penetration testing scenarios.</p>
+  <p><strong>Tools:</strong> All previously used tools</p>
+  <p><strong>Resources:</strong> Practice labs from HTB, TryHackMe</p>
+  <p><strong>Study Time:</strong> 3 hours/day</p>
+  <p><strong>Activities:</strong> Simulate full penetration tests, from information gathering to reporting.</p>
+</section>
+
+<section id="day38" class="mb-5 anchor-offset">
+  <h3>Day 38</h3>
+  <p><strong>Focus:</strong> Practice full penetration testing scenarios.</p>
+  <p><strong>Tools:</strong> All previously used tools</p>
+  <p><strong>Resources:</strong> Practice labs from HTB, TryHackMe</p>
+  <p><strong>Study Time:</strong> 3 hours/day</p>
+  <p><strong>Activities:</strong> Simulate full penetration tests, from information gathering to reporting.</p>
+</section>
+
+<section id="day39" class="mb-5 anchor-offset">
+  <h3>Day 39</h3>
+  <p><strong>Focus:</strong> Practice full penetration testing scenarios.</p>
+  <p><strong>Tools:</strong> All previously used tools</p>
+  <p><strong>Resources:</strong> Practice labs from HTB, TryHackMe</p>
+  <p><strong>Study Time:</strong> 3 hours/day</p>
+  <p><strong>Activities:</strong> Simulate full penetration tests, from information gathering to reporting.</p>
+</section>
+
+<section id="day40" class="mb-5 anchor-offset">
+  <h3>Day 40</h3>
+  <p><strong>Focus:</strong> Practice full penetration testing scenarios.</p>
+  <p><strong>Tools:</strong> All previously used tools</p>
+  <p><strong>Resources:</strong> Practice labs from HTB, TryHackMe</p>
+  <p><strong>Study Time:</strong> 3 hours/day</p>
+  <p><strong>Activities:</strong> Simulate full penetration tests, from information gathering to reporting.</p>
+</section>
+
+<h2 class="mb-4">Week 7: Final Preparation</h2>
+
+<section id="day41" class="mb-5 anchor-offset">
+  <h3>Day 41</h3>
+  <p><strong>Focus:</strong> Exam preparation and practice tests.</p>
+  <p><strong>Tools:</strong> All previously used tools</p>
+  <p><strong>Resources:</strong> Practice exams, HTB challenges</p>
+  <p><strong>Study Time:</strong> 3 hours/day</p>
+  <p><strong>Activities:</strong> Take practice exams, focus on time management, review all notes, and ensure understanding of all key concepts.</p>
+</section>
+
+<section id="day42" class="mb-5 anchor-offset">
+  <h3>Day 42</h3>
+  <p><strong>Focus:</strong> Exam preparation and practice tests.</p>
+  <p><strong>Tools:</strong> All previously used tools</p>
+  <p><strong>Resources:</strong> Practice exams, HTB challenges</p>
+  <p><strong>Study Time:</strong> 3 hours/day</p>
+  <p><strong>Activities:</strong> Take practice exams, focus on time management, review all notes, and ensure understanding of all key concepts.</p>
+</section>
+
+<section id="day43" class="mb-5 anchor-offset">
+  <h3>Day 43</h3>
+  <p><strong>Focus:</strong> Exam preparation and practice tests.</p>
+  <p><strong>Tools:</strong> All previously used tools</p>
+  <p><strong>Resources:</strong> Practice exams, HTB challenges</p>
+  <p><strong>Study Time:</strong> 3 hours/day</p>
+  <p><strong>Activities:</strong> Take practice exams, focus on time management, review all notes, and ensure understanding of all key concepts.</p>
+</section>
+
+<section id="day44" class="mb-5 anchor-offset">
+  <h3>Day 44</h3>
+  <p><strong>Focus:</strong> Exam preparation and practice tests.</p>
+  <p><strong>Tools:</strong> All previously used tools</p>
+  <p><strong>Resources:</strong> Practice exams, HTB challenges</p>
+  <p><strong>Study Time:</strong> 3 hours/day</p>
+  <p><strong>Activities:</strong> Take practice exams, focus on time management, review all notes, and ensure understanding of all key concepts.</p>
+</section>
+
+<section id="day45" class="mb-5 anchor-offset">
+  <h3>Day 45</h3>
+  <p><strong>Focus:</strong> Exam preparation and practice tests.</p>
+  <p><strong>Tools:</strong> All previously used tools</p>
+  <p><strong>Resources:</strong> Practice exams, HTB challenges</p>
+  <p><strong>Study Time:</strong> 3 hours/day</p>
+  <p><strong>Activities:</strong> Take practice exams, focus on time management, review all notes, and ensure understanding of all key concepts.</p>
+</section>
+
+<h2 class="mb-4">Exam Plan (10 Days)</h2>
+
+<section id="examday1" class="mb-5 anchor-offset">
+  <h3>Exam Day 1</h3>
+  <p><strong>Focus:</strong> Perform the exam tasks, document findings, and submit reports.</p>
+  <p><strong>Tools:</strong> All previously used tools</p>
+  <p><strong>Resources:</strong> Course material, previous notes, online resources for troubleshooting</p>
+  <p><strong>Study Time:</strong> 4-6 hours/day</p>
+  <p><strong>Activities:</strong> Methodically work through exam tasks, ensure thorough documentation, manage time efficiently, and review tasks before submission.</p>
+</section>
+
+<section id="examday2" class="mb-5 anchor-offset">
+  <h3>Exam Day 2</h3>
+  <p><strong>Focus:</strong> Perform the exam tasks, document findings, and submit reports.</p>
+  <p><strong>Tools:</strong> All previously used tools</p>
+  <p><strong>Resources:</strong> Course material, previous notes, online resources for troubleshooting</p>
+  <p><strong>Study Time:</strong> 4-6 hours/day</p>
+  <p><strong>Activities:</strong> Methodically work through exam tasks, ensure thorough documentation, manage time efficiently, and review tasks before submission.</p>
+</section>
+
+<section id="examday3" class="mb-5 anchor-offset">
+  <h3>Exam Day 3</h3>
+  <p><strong>Focus:</strong> Perform the exam tasks, document findings, and submit reports.</p>
+  <p><strong>Tools:</strong> All previously used tools</p>
+  <p><strong>Resources:</strong> Course material, previous notes, online resources for troubleshooting</p>
+  <p><strong>Study Time:</strong> 4-6 hours/day</p>
+  <p><strong>Activities:</strong> Methodically work through exam tasks, ensure thorough documentation, manage time efficiently, and review tasks before submission.</p>
+</section>
+
+<section id="examday4" class="mb-5 anchor-offset">
+  <h3>Exam Day 4</h3>
+  <p><strong>Focus:</strong> Perform the exam tasks, document findings, and submit reports.</p>
+  <p><strong>Tools:</strong> All previously used tools</p>
+  <p><strong>Resources:</strong> Course material, previous notes, online resources for troubleshooting</p>
+  <p><strong>Study Time:</strong> 4-6 hours/day</p>
+  <p><strong>Activities:</strong> Methodically work through exam tasks, ensure thorough documentation, manage time efficiently, and review tasks before submission.</p>
+</section>
+
+<section id="examday5" class="mb-5 anchor-offset">
+  <h3>Exam Day 5</h3>
+  <p><strong>Focus:</strong> Perform the exam tasks, document findings, and submit reports.</p>
+  <p><strong>Tools:</strong> All previously used tools</p>
+  <p><strong>Resources:</strong> Course material, previous notes, online resources for troubleshooting</p>
+  <p><strong>Study Time:</strong> 4-6 hours/day</p>
+  <p><strong>Activities:</strong> Methodically work through exam tasks, ensure thorough documentation, manage time efficiently, and review tasks before submission.</p>
+</section>
+
+<section id="examday6" class="mb-5 anchor-offset">
+  <h3>Exam Day 6</h3>
+  <p><strong>Focus:</strong> Perform the exam tasks, document findings, and submit reports.</p>
+  <p><strong>Tools:</strong> All previously used tools</p>
+  <p><strong>Resources:</strong> Course material, previous notes, online resources for troubleshooting</p>
+  <p><strong>Study Time:</strong> 4-6 hours/day</p>
+  <p><strong>Activities:</strong> Methodically work through exam tasks, ensure thorough documentation, manage time efficiently, and review tasks before submission.</p>
+</section>
+
+<section id="examday7" class="mb-5 anchor-offset">
+  <h3>Exam Day 7</h3>
+  <p><strong>Focus:</strong> Perform the exam tasks, document findings, and submit reports.</p>
+  <p><strong>Tools:</strong> All previously used tools</p>
+  <p><strong>Resources:</strong> Course material, previous notes, online resources for troubleshooting</p>
+  <p><strong>Study Time:</strong> 4-6 hours/day</p>
+  <p><strong>Activities:</strong> Methodically work through exam tasks, ensure thorough documentation, manage time efficiently, and review tasks before submission.</p>
+</section>
+
+<section id="examday8" class="mb-5 anchor-offset">
+  <h3>Exam Day 8</h3>
+  <p><strong>Focus:</strong> Perform the exam tasks, document findings, and submit reports.</p>
+  <p><strong>Tools:</strong> All previously used tools</p>
+  <p><strong>Resources:</strong> Course material, previous notes, online resources for troubleshooting</p>
+  <p><strong>Study Time:</strong> 4-6 hours/day</p>
+  <p><strong>Activities:</strong> Methodically work through exam tasks, ensure thorough documentation, manage time efficiently, and review tasks before submission.</p>
+</section>
+
+<section id="examday9" class="mb-5 anchor-offset">
+  <h3>Exam Day 9</h3>
+  <p><strong>Focus:</strong> Perform the exam tasks, document findings, and submit reports.</p>
+  <p><strong>Tools:</strong> All previously used tools</p>
+  <p><strong>Resources:</strong> Course material, previous notes, online resources for troubleshooting</p>
+  <p><strong>Study Time:</strong> 4-6 hours/day</p>
+  <p><strong>Activities:</strong> Methodically work through exam tasks, ensure thorough documentation, manage time efficiently, and review tasks before submission.</p>
+</section>
+
+<section id="examday10" class="mb-5 anchor-offset">
+  <h3>Exam Day 10</h3>
+  <p><strong>Focus:</strong> Perform the exam tasks, document findings, and submit reports.</p>
+  <p><strong>Tools:</strong> All previously used tools</p>
+  <p><strong>Resources:</strong> Course material, previous notes, online resources for troubleshooting</p>
+  <p><strong>Study Time:</strong> 4-6 hours/day</p>
+  <p><strong>Activities:</strong> Methodically work through exam tasks, ensure thorough documentation, manage time efficiently, and review tasks before submission.</p>
+</section>
+
+
+  </div>
+</div>
+
+ <!-- Bootstrap JS and dependencies -->
+ <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+ <!-- A Code by Cybefox (Yuvraj Todankar) -->
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
